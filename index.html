@@ -38,7 +38,7 @@
 </head>
 
 <body>
-  <h1 class="bg-slate-500 text-white ">50:47</h1>
+ 
   <div id="wrapper overflow-y-hidden" class="overflow-x-hidden">
     <!-- Nav bar -->
     <div class="nav-bar bg-deepBlue text-sm">
@@ -102,7 +102,7 @@
     <!-- Hero section -->
     <section class="relative bg-deepBlue">
       <!-- left pa rt -->
-      <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+      <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
         <div class="space-y-8">
           <h1 class="font-mullish font-bold text-white leading-[1.2] text-[40px]">Power of Finance and grow
             you business</h1>
@@ -138,7 +138,8 @@
       <div class="relative w-11/12 mx-auto max-w-[1080px] mt-4">
         <!-- heading -->
         <div class="flex justify-center flex-col items-center gap-3 p-4">
-          <h2 class="text-2xl font-bold text-deepBlue leading-5">Accept Payments with Razorpay Payment Suite</h2>
+          <h2 class="text-2xl font-bold text-deepBlue leading-5 hidden lg:block">Accept Payments with Razorpay Payment Suite</h2>
+          <h2 class="text-2xl font-bold text-deepBlue leading-5 block lg:hidden ">Explore Razorpay Payment Suite</h2>
           <div class="w-6 h-1 bg-greenLight"></div>
         </div>
 
@@ -147,11 +148,11 @@
           <!-- left -->
           <div class="flex flex-col justify-between">
             <!-- heding -->
-            <div class="font-mullish font-bold text-3xl leading-10 max-w-[500px]">
-              <h3>Supercharge your business with the all‑powerful <span class="text-lightBlue">Payment Gateway</span>
+            <div class="font-mullish font-bold text-3xl leading-10 lg:max-w-[500px]">
+              <h3 class="text-lg lg:text-3xl">Supercharge your business with the all‑powerful <span class="text-lightBlue">Payment Gateway</span>
               </h3>
             </div>
-            <ul class="flex flex-col gap-2">
+            <ul class="flex flex-col gap-2 mt-10">
               <li class="font-mullish flex items-center space-x-4">
                 <i data-feather="check" class="text-greenLight"></i>
                 <span>
@@ -188,9 +189,9 @@
               </li>
             </ul>
             <!-- for buttons -->
-            <div class="flex space-x-6 items-baseline">
+            <div class="flex flex-col-reverse space-x-6 items-baseline lg:flex-row md:flex-row">
               <button
-                class="bg-lightBlue text-white rounded-md font-bold font-mullish hover:bg-lightBlue500 transition-all duration-200 py-[10px] px-[10px] mt-7 flex gap-2 align-baseline">Sign
+                class="bg-lightBlue text-white rounded-md font-bold font-mullish hover:bg-lightBlue500 transition-all duration-200 py-[10px] px-[10px] mt-7 flex gap-2 align-baseline w-full md:w-fit">Sign
                 Up Now<i data-feather="arrow-right" class="text-white w-4"></i> </button>
               <!-- for Hyperlink -->
               <div class="font-boldpy-[10px] px-[10px] mt-7 flex gap-2 align-baseline">
@@ -199,10 +200,11 @@
                   more</a>
                 <i data-feather="chevron-right"
                   class="text-lightBlue500 w-4  hover:text-deepBlueHead transition-all duration-200 "></i>
+                
               </div>
             </div>
           </div>
-          <img src="./images/payment-suite.png" width="604" height="429" alt="">
+          <img src="./images/payment-suite.png" width="604" height="429" alt="" class="hidden md:block lg:block md:max-w-[400px] lg:max-w-[600px]">
         </div>
       </div>
 
@@ -210,7 +212,7 @@
     </section>
 
     <!-- Feature grid section -->
-    <div class="w-[1080px] grid grid-cols-3 gap-8 ml-24  mt-20">
+    <div class="w-[full] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-10">
       <!--Box1-->
       <div class="w-full min-h-[15rem] relative cursor-pointer">
         <img src="./images/payment-link-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
@@ -466,13 +468,13 @@
     </div>
 
     <!-- Hero section2 bottom -->
-    <section class="bg-[url(./images/feature-section-2BG.svg)]  bg-cover bg-center pb-[500px] mt-14 pt-40">
+    <section class="bg-[url(./images/feature-section-2BG.svg)]  bg-cover bg-center pb-[430px] -mt-20 md:mt-14 pt-40">
       <!-- cross flame images -->
 
       <div class="relative w-10/12 mx-auto max-w-[1080px] pt-2">
         <!-- heading -->
-        <h2 class="text-2xl font-bold text-center  text-white leading-5">Explore Razorpay Business Banking</h2>
-        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+        <h2 class="text-2xl font-bold text-center  text-white leading-5 hidden md:block">Explore Razorpay Business Banking</h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6 hidden md:block"></div>
 
         <!-- main feature box -->
         <div class="w-full flex flex-col relative">
@@ -482,17 +484,21 @@
             loading="lazy">
 
           <!-- Context box -->
-          <div class="w-full  border border-slate-700 min-h-[520px] flex rounded-md relative p-10 py-10 mt-16 z-20">
+          <div class="w-full  md:border md:border-slate-700 min-h-[520px] flex rounded-md relative p-10 md:py-10 mt-16 z-20">
             <!-- left -->
             <div class="flex flex-col justify-between z-20">
               <!-- heding -->
-              <div class="font-mullish font-bold text-3xl leading-10 max-w-[600px]">
-                <h3 class="text-white">Manage your company’s finances with <img src="./images/razorpayX.svg" alt=""
+              <div class="font-mullish font-bold text-3xl leading-10 md:max-w-[600px] max-w-[600px]">
+                <h3 class="text-white hidden md:block">Manage your company’s finances with <img src="./images/razorpayX.svg" alt=""
                     width="168px" height="32px" class="inline">
                   <span class="text-greenLight">Business Banking</span>
                 </h3>
+                <h3 class="text-white md:hidden -ml-10">Explore <img src="./images/razorpayX.svg" alt=""
+                  width="168px" height="32px" class="inline">
+                <span class="text-greenLight">Business Banking</span>
+              </h3>
               </div>
-              <ul class="flex flex-col gap-2 text-white">
+              <ul class="flex flex-col gap-2 text-white mt-6 md:mt-0">
                 <li class="font-mullish flex items-center space-x-4">
                   <i data-feather="check" class="text-greenLight"></i>
                   <span>
@@ -520,10 +526,10 @@
                 </li>
               </ul>
               <!-- for buttons -->
-              <div class="flex flex-row w-full items-center space-x-4">
+              <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4">
                 <button class="relative bg-lightBlue flex items-center 
                           justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
-                           font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
+                           font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 self-stretch mt-4 md:mt-0 place-content-center">
                   Sign Up
                   <div class="w-14 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] 
                               flex justify-center items-center">
@@ -534,7 +540,7 @@
                   </div>
                 </button>
                 <!-- for Hyperlink -->
-                <div class="flex flex-row items-center cursor-pointer group">
+                <div class="flex flex-row self-start md:items-center cursor-pointer group mt-6 md:mt-0">
                   <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
                     transition-all duration-200">Know More</a>
                   <i data-feather="chevron-right"
@@ -542,11 +548,11 @@
                 </div>
               </div>
             </div>
-            <img src="./images/buisness-banking.png" alt="" class="max-w-[600px] absolute right-0 bottom-0 z-4 ">
+            <img src="./images/buisness-banking.png" alt="" class="max-w-[600px] absolute right-0 bottom-0 z-4 hidden md:block md:max-w-[400px] lg:max-w-[600px] ">
           </div>
 
           <!-- single row cards -->
-          <div class="grid grid-cols-3 w-full gap-4 my-14">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
             <!--box1-->
             <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
               <!-- box icon -->
@@ -664,7 +670,7 @@
           </div>
           <!-- section end box -->
           <div
-            class="font-mullish text-white flex items-center w-[1080px] border border-slate-700 rounded-md p-7 justify-between">
+            class="font-mullish text-white md:flex items-center w-[1080px] border border-slate-700 rounded-md p-7 justify-between hidden md:block">
             <h2 class="text-xl">
               Check out the live demo to learn how RazorpayX works. <span class="font-bold">No sign-up required!</span>
             </h2>
@@ -693,13 +699,13 @@
 
     <!-- Product suite card section -->
     <section class="bg-white relative">
-      <div class="relative w-11/12 mx-auto max-w-[1080px] mt-4">
+      <div class="relative w-11/12 mx-auto max-w-[1080px] -mt-64 md:mt-4">
         <img src="./images/feature-section1-dottedrows.png" loading="lazy" alt=""
           class="absolute w-[233px] left-[300px] z-10  -top-24">
         <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
           class="absolute w-[233px]  -right-[3.5rem] z-10  -top-24">
         <!-- for cards so making grid -->
-        <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
           <!-- item1 -->
           <div class="relative flex items-center z-0">
             <h2 class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]">New in the
@@ -1708,7 +1714,7 @@
       </div>
     </div>
   </footer>
-  
+
   </div>
   <script>
     feather.replace()
