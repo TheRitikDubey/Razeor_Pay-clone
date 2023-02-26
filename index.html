@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <title>RazorPay-Clone</title>
-
+  <script src="https://kit.fontawesome.com/607db683c9.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="shortcut icon" href="./images/core-features-sectionBg.svg" type="image/x-icon">
   <style>
@@ -16,7 +16,7 @@
       padding-top: 12rem;
       padding-bottom: 12rem;
     }
-
+   
     .ctaSection {
       background-size: 100% 100%;
     }
@@ -34,6 +34,16 @@
         top: -50%;
       }
     }
+    @media screen and (max-width: 780px) {
+    .corefeaturesection {
+      background-size: 350% 105%;
+      padding-top: 14rem;
+      padding-bottom: 12rem;
+    }
+    .ctaSection {
+      background-size: 300% 105%;
+    }
+  }
   </style>
 </head>
 
@@ -42,60 +52,61 @@
   <div id="wrapper overflow-y-hidden" class="overflow-x-hidden">
     <!-- Nav bar -->
     <div class="nav-bar bg-deepBlue text-sm">
-      <div class="relative w-[1080px] mx-auto flex  items-center justify-between ">
+      <div class="relative md:w-[1080px] mx-auto flex  items-center md:justify-between justify-around ">
         <a href="" class="cursor-pointer py-7 pr-7">
           <img src="./images/logo.svg" width="125px" height="30px" alt="">
         </a>
         <ul class="flex space-x-9">
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Payments</a>
             <div class="absolute bottom-0 w-full h-1 hidden bg-lightBlue group-hover:block "></div>
           </li>
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Banking</a>
             <div class="absolute bottom-0 w-full h-1 hidden bg-lightBlue group-hover:block "></div>
           </li>
 
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Corporate Card</a>
 
           </li>
 
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Payroll</a>
 
           </li>
 
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Resources</a>
             <div class="absolute bottom-0 w-full h-1 hidden bg-lightBlue group-hover:block "></div>
           </li>
 
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Support</a>
             <div class="absolute bottom-0 w-full h-1 hidden bg-lightBlue group-hover:block "></div>
           </li>
 
           <li
-            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+            class="py-7 text-white font-mullish hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden md:block">
             <a href="#">Pricing</a>
             <div class="absolute bottom-0 w-full h-1 hidden bg-lightBlue group-hover:block "></div>
           </li>
         </ul>
         <div class="btns flex space-x-6 items-center">
-          <img src="./images/india-flag.svg" width="28px" height="20px" alt="">
+          <img src="./images/india-flag.svg" width="28px" height="20px" alt="" class="hidden md:block">
           <button class="py-3 px-5 font-mullish text-white border-lightBlue border rounded-sm text-sm">Login</button>
 
           <button
-            class="py-3 px-5 font-mullish  border-lightBlue border rounded-sm text-sm transition-all duration-200 font-bold bg-white text-lightBlue300 hover:text-lightBlue">Sign
+            class="py-3 px-5 font-mullish  border-lightBlue border rounded-sm text-sm transition-all duration-200 font-bold bg-white text-lightBlue300 hover:text-lightBlue hidden md:block">Sign
             Up</button>
         </div>
+        <i class="fa-light fa-bars text-4xl"></i>
 
       </div>
     </div>
@@ -810,7 +821,7 @@
             tools to accept online payments and provide the best customer experience</p>
         </div>
         <!-- Nested cards for feature -->
-        <div class="grid grid-cols-4 mt-8 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 gap-8">
           <!-- card 1 -->
           <div class="">
             <img src="./images/instant-activation-icon.svg" alt="">
@@ -882,9 +893,9 @@
 
     <!-- Animation section -->
     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-52 -z-[100] ">
-      <div class=" flex relative w-11/12 mx-auto max-w-[1080px]">
+      <div class=" flex  flex-col md:flex-row relative w-11/12 mx-auto md:max-w-[1080px]">
         <!-- left part -->
-        <div class="flex flex-col justify-center gap-4  max-w-[calc(100%-550px)] ">
+        <div class="flex flex-col justify-center gap-4 max-w-[80%] ml-12 md:ml-0 mt-10 md:mt-0  md:max-w-[calc(100%-550px)] ">
           <!-- heading -->
           <h2 class="font-mullish font-bold text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h2>
           <div class="w-6 h-1 bg-greenLight"></div>
@@ -899,7 +910,7 @@
           <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)" class="absolute w-full h-[150px] top-0 z-50">
           </div>
 
-          <img src="./images/comanies.png" class="absolute h-auto object-cover CompanyList" alt="" width="500">
+          <img src="./images/comanies.png" class="absolute h-auto object-cover CompanyList mt-28 md:mt-0 w-96 md:w-[500px]" alt="">
 
           <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
             class="absolute w-full h-[150px] bottom-0 z-50"> </div>
@@ -984,7 +995,7 @@
 
     <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px] -mt-20">
 
-      <div class="flex relative w-11/12 mx-auto max-w-[1080px] mt-4 justify-between space-x-20 pt-16">
+      <div class="flex relative w-11/12 mx-auto max-w-[1080px] mt-4 justify-between space-x-20 pt-0">
 
         <!-- left part for text and list -->
         <div class="flex flex-col gap-4 mt-20 text-white max-w-[600px]">
@@ -1038,14 +1049,14 @@
 
         </div>
         <!-- right part -->
-        <img src="./images/ctaImg.svg" alt="" width="240px" height="320px" class=" p-2 pt-3">
+        <img src="./images/ctaImg.svg" alt="" width="240px" height="320px" class=" p-2 pt-3 hidden lg:block">
       </div>
     </section>
 
     <!-- footer -->
     <footer
     style="background: linear-gradient(to right, #eef9fe, #edf7ff)"
-    class="-mt-[400px] md:-mt-[300px]"
+    class="-mt-[300px] md:-mt-[300px]"
   >
     <div
       class="w-10/12 pt-[400px] pb-10 md:pt-[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between"
